@@ -11,7 +11,7 @@ function createWindow() {
 
   mainWindow = new BrowserWindow({
     width: 200,
-    height: 200,
+    height: 154,
     transparent: true,
     frame: false,
     alwaysOnTop: true,
@@ -31,7 +31,7 @@ function createWindow() {
 
   // Start at bottom center (renderer will handle positioning)
   const x = Math.floor(width / 2) - 100;
-  const y = height - 100;
+  const y = height - 77;
   mainWindow.setPosition(x, y);
 }
 
