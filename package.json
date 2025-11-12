@@ -1,17 +1,37 @@
 {
   "name": "electron-desktop-cat",
   "version": "1.0.0",
-  "description": "",
+  "description": "Desktop cat that peeks from screen edges",
   "main": "main.js",
   "scripts": {
     "start": "electron .",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "electron-builder --mac",
+    "build:dir": "electron-builder --mac --dir"
   },
-  "keywords": [],
+  "keywords": ["electron", "desktop", "cat", "lottie"],
   "author": "",
   "license": "ISC",
+  "build": {
+    "appId": "com.electron.desktop-cat",
+    "productName": "Desktop Cat",
+    "mac": {
+      "category": "public.app-category.entertainment",
+      "target": ["dmg", "zip"]
+    },
+    "files": [
+      "main.js",
+      "renderer-edge.js",
+      "index.html",
+      "assets/**/*",
+      "node_modules/**/*"
+    ],
+    "directories": {
+      "output": "dist"
+    }
+  },
   "devDependencies": {
-    "electron": "^39.1.2"
+    "electron": "^39.1.2",
+    "electron-builder": "^26.0.12"
   },
   "dependencies": {
     "@electron/remote": "^2.1.3",

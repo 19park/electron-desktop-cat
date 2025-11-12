@@ -29,9 +29,6 @@ function createWindow() {
 
   mainWindow.loadFile('index.html');
 
-  // Open DevTools for debugging
-  mainWindow.webContents.openDevTools({ mode: 'detach' });
-
   // Start at bottom center (renderer will handle positioning)
   const x = Math.floor(width / 2) - 100;
   const y = height - 100;
