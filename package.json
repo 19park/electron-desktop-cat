@@ -8,7 +8,12 @@
     "build": "electron-builder --mac",
     "build:dir": "electron-builder --mac --dir"
   },
-  "keywords": ["electron", "desktop", "cat", "lottie"],
+  "keywords": [
+    "electron",
+    "desktop",
+    "cat",
+    "lottie"
+  ],
   "author": "",
   "license": "ISC",
   "build": {
@@ -16,7 +21,11 @@
     "productName": "Desktop Cat",
     "mac": {
       "category": "public.app-category.entertainment",
-      "target": ["dmg", "zip"]
+      "target": [
+        "dmg",
+        "zip"
+      ],
+      "icon": "assets/images/electron_icon.png"
     },
     "files": [
       "main.js",
@@ -31,7 +40,8 @@
   },
   "devDependencies": {
     "electron": "^39.1.2",
-    "electron-builder": "^26.0.12"
+    "electron-builder": "^26.0.12",
+    "electron-icon-builder": "^2.0.1"
   },
   "dependencies": {
     "@electron/remote": "^2.1.3",
