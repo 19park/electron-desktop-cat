@@ -1,0 +1,58 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+package-lock.json
+node_modules
+dist
+dist-ssr
+storybook-static
+stats.html
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# test
+coverage
+test-results.xml
+
+# local env files
+.env*.local
+
+# mcp
+.cursor
+.claude
+.mcp.json
+
+# Playwright test reports
+playwright-report*/
+report.json
+
+# 기타 테스트 결과물
+test-results/
+
+# Serena language analysis cache
+.serena/cache/
+.serena/**/*.pkl
+
+# Zero-Installs
+.yarn/*
+!.yarn/cache
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions
